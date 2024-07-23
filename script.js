@@ -2,13 +2,13 @@ function isSameType(value1, value2) {
   
     let type1;
     let type2;
-  if(value1.trim().charAt(0) == "'"|| value1.trim().charAt(0) == '"'){
+  if(value1.charAt(0) == "'"|| value1.charAt(0) == '"'){
     type1 = "string";
   }
   else{
     type1 = "number";
   }
-  if(value2.trim().charAt(0) == "'"|| value2.trim().charAt(0) == '"'){
+  if(value2.charAt(0) == "'"|| value2.trim().charAt(0) == '"'){
     type2 = "string";
   }
   else{
@@ -30,7 +30,7 @@ function isSameType(value1, value2) {
 return typeof value1 === typeof value2;
   
 }
-let value1 = prompt("Enter Start of the Range.");
-let value2 = prompt("Enter End Of the Range.");
+// let value1 = prompt("Enter Start of the Range.");
+// let value2 = prompt("Enter End Of the Range.");
 
 alert(isSameType(value1, value2));
